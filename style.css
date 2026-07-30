@@ -719,3 +719,78 @@ transform:scale(1.1);
     }
 
 }
+/* PAGE DE CONFIRMATION */
+
+.thank-you {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #080808;
+}
+
+.thank-you-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 55px 35px;
+    text-align: center;
+    background: #121212;
+    border: 1px solid #00c878;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 200, 120, 0.15);
+}
+
+.thank-you-logo {
+    width: 110px;
+    margin-bottom: 25px;
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #00c878;
+    border-radius: 50%;
+    color: #00c878;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.thank-you-card h1 {
+    color: #00c878;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.thank-you-card p {
+    max-width: 500px;
+    margin: 12px auto;
+    color: #d5d5d5;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.thank-you-card .btn {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    .thank-you-card {
+        padding: 40px 22px;
+    }
+
+    .thank-you-card h1 {
+        font-size: 29px;
+    }
+
+    .thank-you-card p {
+        font-size: 16px;
+    }
+
+}
