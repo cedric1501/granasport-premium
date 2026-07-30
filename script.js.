@@ -1,0 +1,9 @@
+function choisirFormule(formule) {
+
+    const objectif = document.querySelector('input[name="Objectif"]');
+
+    if (objectif) {
+        objectif.value = "Je souhaite choisir la formule " + formule;
+    }
+
+}
