@@ -1116,4 +1116,73 @@ transform:scale(1.1);
         font-size: 25px;
     }
 
+}/* ===== APPEL À L’ACTION FINAL ===== */
+
+.final-cta {
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0b0b0b, #171717);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.final-cta h2 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #ffffff;
+}
+
+.final-cta > p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #d4d4d4;
+}
+
+.final-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 40px 0 25px;
+}
+
+.final-cta-buttons .btn {
+    min-width: 240px;
+    text-align: center;
+}
+
+.final-cta-note {
+    font-size: 0.95rem !important;
+    color: #a8a8a8 !important;
+}
+
+/* Version mobile */
+
+@media (max-width: 600px) {
+
+    .final-cta {
+        padding: 65px 18px;
+    }
+
+    .final-cta h2 {
+        font-size: 2rem;
+    }
+
+    .final-cta > p {
+        font-size: 1rem;
+    }
+
+    .final-cta-buttons {
+        flex-direction: column;
+    }
+
+    .final-cta-buttons .btn {
+        width: 100%;
+        max-width: 330px;
+    }
+
 }
