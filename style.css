@@ -793,4 +793,149 @@ transform:scale(1.1);
         font-size: 16px;
     }
 
+}/* ========================================
+   SECTION COMMENT DÉMARRER - PREMIUM
+======================================== */
+
+.how-it-works {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #07120d,
+        #0d2118,
+        #07120d
+    );
+}
+
+.how-it-works h2 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.how-intro {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #d7d7d7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.steps-grid {
+    max-width: 1250px;
+    margin: 0 auto 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    position: relative;
+    padding: 45px 25px 35px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(95, 255, 160, 0.25);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.step-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #39e58c;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(57, 229, 140, 0.18);
+}
+
+.step-number {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    border-radius: 50%;
+    background: #39e58c;
+    color: #07120d;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0 0 25px rgba(57, 229, 140, 0.35);
+}
+
+.step-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.step-card p {
+    margin: 0;
+    color: #c8d1cc;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.how-it-works .btn {
+    display: inline-block;
+    padding: 17px 35px;
+    border-radius: 50px;
+    background: #39e58c;
+    color: #07120d;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(57, 229, 140, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(57, 229, 140, 0.4);
+}
+
+
+/* ========================================
+   VERSION MOBILE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .how-it-works {
+        padding: 75px 6%;
+    }
+
+    .how-it-works h2 {
+        font-size: 32px;
+    }
+
+    .how-intro {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .step-card {
+        padding: 35px 25px;
+    }
+
 }
